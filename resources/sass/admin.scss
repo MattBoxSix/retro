@@ -1,0 +1,87 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html,body {
+  height: 100%;
+  overflow-x: hidden;
+  color: black;
+}
+
+.left{
+  background-color: #222629;
+  color: #86c232;
+  padding-right: 0px !important;
+  height: 800px !important;
+}
+.right{
+  padding-left: 0px !important;
+  h1{
+    color: black !important;
+  }
+}
+.list-group-item-action{
+  background-color: #222629 !important;
+  color: #86c232 !important;
+  border-color: #474b4f !important;
+}
+.list-group-item-action:hover{
+  background-color: #080808 !important;
+}
+h1{
+  text-align: center;
+}
+.profileBorder{
+  margin: auto;
+  border-radius: 100%;
+  border: 2px solid #86c232;
+}
+.menuPadding{
+  padding: 0px 10px;
+}
+.mainBody{
+  color:white !important;
+  .frontPageCells{
+    background-color: white;
+    height: 250px;
+    border: 2px solid #86c232;
+  }
+  h1{
+    color: white;
+  }
+  .table{
+    background-color: white;
+  }
+}
+
+.modal{
+  color:#86c232;
+}
+
+#usersTable{
+  color: black;
+}
+
+.dataTables_filter {
+  color: black !important;
+}
+.dataTables_length {
+  color: black !important;
+}
+.tile_stats_count{
+  color: black !important;
+  background-color: white !important;
+  margin-right: 20px !important;
+  text-align: center;
+}
+
+.count_top{
+  color: black !important;
+  font-weight: bold;
+  text-align: center;
+}
