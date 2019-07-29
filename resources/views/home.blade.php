@@ -2,6 +2,7 @@
 
 @section('content')
   <!--title section-->
+
   <div class="row">
     <div class="col-lg-10 col-sm-12 offset-md-1 offset-sm-0">
       @include('includes/home/title')

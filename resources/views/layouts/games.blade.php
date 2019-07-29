@@ -21,6 +21,7 @@
   </head>
   </nav>
   <body>
+    @include('cookieConsent::index')
     <div class="row">
       <div class="col-md-10 col-12 offset-md-1 offset-0">
         @include('includes/home/title')

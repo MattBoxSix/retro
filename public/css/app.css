@@ -11105,6 +11105,20 @@ body {
   overflow-x: hidden;
 }
 
+.js-cookie-consent {
+  position: fixed;
+  bottom: 0%;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  z-index: 9999;
+  background-color: #1A1A1A;
+  border-color: blue;
+  border: solid 1px;
+  color: #86c232;
+  opacity: 0.95;
+}
+
 .retro {
   font-family: "Horizon", Arial, sans-serif !important;
   text-shadow: 0 0 3px #000;

@@ -27,5 +27,6 @@
   </nav>
   <body>
   @yield('content')
+  @include('cookieConsent::index')
   </body>
 </html>

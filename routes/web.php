@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+Auth::routes(['verify' => true]);
 Route::get('/games/{category}', 'GamesController@show')->name('games.show');
 Route::get('/peripherals/{category}', 'GamesController@show')->name('peripherals.index');
 Route::get('/figures/{category}', 'GamesController@show')->name('figures.index');
