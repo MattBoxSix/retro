@@ -11362,6 +11362,10 @@ ul {
   .gamesSide {
     font-size: 0.8rem !important;
   }
+
+  #import {
+    font-size: 0.8rem !important;
+  }
 }
 
 .loginButtons {
