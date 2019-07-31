@@ -67,7 +67,7 @@
     <p>Inside out recently covered us for one of their shows! Check out the video here to see what they had to say about us.</p>
   </div>
   <div class="col-12 col-lg-6 aboutUs">
-    <iframe width="400" height="350" src="https://www.youtube.com/embed/geC54f8_BNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="400" height="350" src="https://www.youtube.com/embed/Fastqiw7lBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 <div class="row">

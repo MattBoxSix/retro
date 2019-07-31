@@ -32,7 +32,7 @@
             <div class="col-2 offset-2"><a href="{{ route('privacy.index')}}">Privacy Policy</a></div>
             <div class="col-2"><a href="{{ route('cookies.index')}}">Cookie Policy</a></div>
             <div class="col-2"><a href="{{ route('terms.index')}}">Terms & Conditions</a></div>
-            <div class="col-2"><a href="{{ route('terms.index')}}">FAQ</a></div>
+            <div class="col-2"><a href="{{ route('faq.index')}}">FAQ</a></div>
           </div>
           <br>
           <div class="row">

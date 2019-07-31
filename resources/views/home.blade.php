@@ -28,7 +28,6 @@
 
       <!--recommend section-->
       @include('includes/home/recommend')
-      @include('includes/home/faq')
       <!--end of recommend section-->
 
       <!--contact and footer section-->

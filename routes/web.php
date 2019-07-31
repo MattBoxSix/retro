@@ -19,6 +19,7 @@ Route::get('/thankyou', 'thankYouController@index')->name('thankyou.index');
 Route::get('/privacy', 'PrivacyController@index')->name('privacy.index');
 Route::get('/cookies', 'CookiesController@index')->name('cookies.index');
 Route::get('/terms', 'TermsController@index')->name('terms.index');
+Route::get('/faq', 'FaqController@index')->name('faq.index');
 
 
 Route::any('/search/{action}', [
