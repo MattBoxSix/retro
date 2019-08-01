@@ -9,7 +9,7 @@
   <!--Nav section-->
   @include('includes/home/navbar')
   <h1><p class="font-bold text-center mainHeaders"><u>Frequently Asked Questions</u></p></h1>
-  Here you'll find most of the answers to the most common questions regarding ordering, returns and other general enquiries. If you have any other enquiries, please contact us
+  Here you'll find most of the answers to the most common questions regarding ordering, returns and other general enquiries. If you have any other enquiries, please <a href="https://www.retro-world.co.uk/#contact">contact us</a>
 <div class="container">
   <div class="panel-group" id="accordion"><br>
     <div class="card">
@@ -21,7 +21,7 @@
       <div id="collapse1" class="collapse" data-parent="#accordion">
 
         <div class="panel-body">Postage in the U.K. is £1.99 for each item that’s priced under £25. Postage is FREE if you spend over £25.<br><br>
-        Please contact us for details of postage costs if you are an International customer
+        Please <a href="https://www.retro-world.co.uk/#contact">contact us</a> for details of postage costs if you are an International customer
 </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
         </h4>
       </div>
       <div id="collapse4" class="collapse" data-parent="#accordion">
-        <div class="panel-body">We send out Worldwide. If you contact us we can tell you the postage rate for your item.
+        <div class="panel-body">We send out Worldwide. If you <a href="https://www.retro-world.co.uk/#contact">contact us</a> we can tell you the postage rate for your item.
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@
         </h4>
       </div>
       <div id="collapse7" class="collapse" data-parent="#accordion">
-        <div class="panel-body">All items sold by Retro World are tested thoroughly before being dispatched, but in the unlikely event of something arriving faulty, the item may be returned for a replacement but please first contact us.
+        <div class="panel-body">All items sold by Retro World are tested thoroughly before being dispatched, but in the unlikely event of something arriving faulty, the item may be returned for a replacement but please first <a href="https://www.retro-world.co.uk/#contact">contact us</a>.
 </div>
       </div>
     </div>

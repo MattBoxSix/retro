@@ -11334,16 +11334,14 @@ ul {
   margin-left: 20px;
   width: 100%;
   height: auto;
-  vertical-align: middle;
   font-size: 1.3rem !important;
 }
 
-#import {
+.import {
   font-family: "Iceland", cursive;
   margin-left: 15px;
   width: 100%;
   height: auto;
-  vertical-align: middle;
   font-size: 2rem !important;
 }
 
@@ -11362,8 +11360,9 @@ ul {
     font-size: 0.8rem !important;
   }
 
-  #import {
-    font-size: 0.8rem !important;
+  .import {
+    font-size: 1.5rem !important;
+    margin-left: 10px;
   }
 }
 

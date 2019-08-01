@@ -158,7 +158,7 @@
 </div>
 <div class="col-4 col-lg-2 gamesCategories">
   <div class="container">
-    <p id="import">Imports and other consoles</p>
+    <p class="import">Imports and other consoles</p>  
     <div class="overlay">
       <div class="text">
         <ul class="navbar-nav">
