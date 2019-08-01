@@ -88,7 +88,7 @@
 <div class="row" id="gamerow">
 <div class="col-4 col-lg-2 gamesCategories">
   <div class="container">
-    <p id="eightBit">8-Bit</p>
+    <p class="eightBit">8-Bit</p>
     <div class="overlay">
       <div class="text">
         <ul class="navbar-nav">
@@ -158,12 +158,42 @@
 </div>
 <div class="col-4 col-lg-2 gamesCategories">
   <div class="container">
-    <p class="import">Imports and other consoles</p>  
+    <p class="import">Imports and other consoles</p>
     <div class="overlay">
       <div class="text">
         <ul class="navbar-nav">
           @foreach($importCategories as $import)
           <li><a href="{{route('games.show', $import->id)}}">All&nbspGames</a></li>
+          @endforeach
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row" id="gamerow">
+<div class="col-4 col-lg-2 gamesCategories offset-md-4">
+  <div class="container">
+    <img src="/images/logos/gamewatch.png" alt="Avatar" class="image img-fluid">
+    <div class="overlay">
+      <div class="text">
+        <ul class="navbar-nav">
+          @foreach($cdiCategories as $cdi)
+          <li><a href="{{route('games.show', $cdi->id)}}">All&nbspGames</a></li>
+          @endforeach
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-4 col-lg-2 gamesCategories">
+  <div class="container">
+    <p class="eightBit">PC</p>
+    <div class="overlay">
+      <div class="text">
+        <ul class="navbar-nav">
+          @foreach($neoCategories as $neo)
+          <li><a href="{{route('games.show', $neo->id)}}">All&nbspGames</a></li>
           @endforeach
         </ul>
       </div>

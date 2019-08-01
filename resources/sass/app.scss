@@ -72,7 +72,7 @@ a{
 #gamerow{
   margin-left: 0px !important;
   margin-right: 0px !important;
-  background-color: #86c232;
+  // background-color: #86c232;
 }
 .gamesCategories{
   background-image: linear-gradient(#000000, #242424, #242424, #000000);
@@ -85,12 +85,13 @@ a{
   color: white;
 
 }
+
 .image {
   display: inline-block;
   margin-top: 45px;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+  width: 100%;
+  height:100%;
+  object-fit: contain;
 }
 
 .overlay {
@@ -221,10 +222,10 @@ padding-inline-start: 10px;
   width: 500px;
 }
 
-#eightBit{
+.eightBit{
   font-family: 'Press Start 2P', cursive;
-  margin-top: 55px;
-  margin-left: 20px;
+  text-align: center;
+  padding: 50px 0;
   width: 100%;
   height: auto;
   font-size: 1.3rem !important;
@@ -247,7 +248,9 @@ padding-inline-start: 10px;
     font-size: 1.4rem !important;
   }
 }
-
+.mobile {
+  display: none;
+}
 @media (min-width: 300px) and (max-width: 650px){
   .gamesSide{
     font-size: 0.8rem !important;
@@ -255,6 +258,9 @@ padding-inline-start: 10px;
   .import{
     font-size: 1.5rem !important;
     margin-left: 10px;
+  }
+  .mobile {
+    display: block;
   }
 }
 
