@@ -17,12 +17,10 @@
 <div class="row">
   <div class="col-lg-10 col-sm-12 offset-md-1 offset-sm-0 aboutUs"><br>
     <p class="font-weight-bold font-italic">Retro World... The best games shop in the world !</p>
-    <img src="retro_images/store.jpg" alt="" class="img-fluid shopImage" style="width: 300px;">
-    <p>Retro World has been buying and selling retro games and consoles in Derby Eagle market for the last 20 years. </p>
-    <p>We are a husband and wife team who love retro gaming and collecting. We have built up an enviable reputation and customers have travelled from all over the country to purchase rare games and consoles from us.</p>
-    <p>We have a huge game and console stock of all the popular games and rare collectors condition games and game collectables. Our stock changes daily and we have different game titles and consoles for sale. We sell and also buy games and consoles.</p>
+    <p>Retro World has been buying and selling retro games and consoles in Derby Eagle market for over twenty years. We have built up an enviable reputation and customers travel from all over the country just to purchase our games. We are a husband and wife team who love retro gaming and collecting retro games. We have now relocated our business from Derby to Burton-on-Trent. You will find us at Burton Indoor market every Saturday with lots of retro goodies for sale. Stock changes all the time so we have different games and consoles every week.</p>
+    <p>We have a huge game and console stock of all the popular games, and we get rare collectors condition games in. We are always interested  buying your unwanted games and consoles. Please look at our selling enquiry page.</p>
+    Get in touch by email <a href="mailto:retroworlds@gmail.com">retroworlds@gmail.com</a> or WhatsApp us on Number <a href="tel:07305086858">07305086858</a>.Or you can message us on our Facebook page.
 
-   <p>Please take a look at our selling enquiry page. We attend Em Con conventions all around the country and we also trade at Burton indoor market on Saturdays. If you have any old games & consoles you want to sell then please take a look at our selling enquiry page or get in touch by email retroworlds@gmail.com or Whattsapp us on Number 07305 086858.</p>
     <hr>
   </div>
 
@@ -64,7 +62,7 @@
 <div class="row">
   <div class="col-12 col-lg-6 aboutUs">
     <h3>Inside Out</h3>
-    <p>Inside out recently covered us for one of their shows! Check out the video here to see what they had to say about us.</p>
+    <p>Retro World was shown on a recent episode of the BBC 1 programme Inside Out in a feature on retro gaming. Our business was chosen as we have been trading in the Eagle Market for over twenty years selling and buying retro consoles and games. When we first started out our games were of course current and turned retro later. Check out our interview.</p>
   </div>
   <div class="col-12 col-lg-6 aboutUs">
     <iframe width="400" height="350" src="https://www.youtube.com/embed/Fastqiw7lBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

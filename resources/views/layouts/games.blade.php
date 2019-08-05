@@ -45,6 +45,9 @@
                 @foreach($cdiCategories as $cdi)
                 <li><a href="{{route('games.show', $cdi->id)}}">{{ucfirst($cdi->name)}}</a></li>
                 @endforeach
+                @foreach($gawCategories as $gaw)
+                <li><a href="{{route('games.show', $gaw->id)}}">{{ucfirst($gaw->name)}}</a></li>
+                @endforeach
                 @foreach($importCategories as $import)
                 <li><a href="{{route('games.show', $import->id)}}">{{ucfirst($import->name)}}</a></li>
                 @endforeach
@@ -59,6 +62,9 @@
                   </ul>
                 @foreach($pcCategories as $pc)
                 <li><a href="{{route('games.show', $pc->id)}}">{{ucfirst($pc->name)}}</a></li>
+                @endforeach
+                @foreach($pcEngineCategories as $pcengine)
+                <li><a href="{{route('games.show', $pcengine->id)}}">{{ucfirst($pcengine->name)}}</a></li>
                 @endforeach
                 <li>Playstation</li>
                   <ul>

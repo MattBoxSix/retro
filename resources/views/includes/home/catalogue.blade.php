@@ -33,7 +33,7 @@
     <img src="/images/logos/pslogo.png" alt="Avatar" class="image img-fluid">
     <div class="overlay">
       <div class="text">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="font-size: 0.8rem;">
           @foreach($psCategories as $ps)
           <li><a href="{{route('games.show', $ps->id)}}">{{ucfirst($ps->name)}}</a></li>
           @endforeach
@@ -148,8 +148,8 @@
     <div class="overlay">
       <div class="text">
         <ul class="navbar-nav">
-          @foreach($pcCategories as $pc)
-          <li><a href="{{route('games.show', $pc->id)}}">All&nbspGames</a></li>
+          @foreach($pcEngineCategories as $pcEngine)
+          <li><a href="{{route('games.show', $pcEngine->id)}}">All&nbspGames</a></li>
           @endforeach
         </ul>
       </div>
@@ -164,36 +164,6 @@
         <ul class="navbar-nav">
           @foreach($importCategories as $import)
           <li><a href="{{route('games.show', $import->id)}}">All&nbspGames</a></li>
-          @endforeach
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="row" id="gamerow">
-<div class="col-4 col-lg-2 gamesCategories offset-md-4">
-  <div class="container">
-    <img src="/images/logos/gamewatch.png" alt="Avatar" class="image img-fluid">
-    <div class="overlay">
-      <div class="text">
-        <ul class="navbar-nav">
-          @foreach($cdiCategories as $cdi)
-          <li><a href="{{route('games.show', $cdi->id)}}">All&nbspGames</a></li>
-          @endforeach
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="col-4 col-lg-2 gamesCategories">
-  <div class="container">
-    <p class="eightBit">PC</p>
-    <div class="overlay">
-      <div class="text">
-        <ul class="navbar-nav">
-          @foreach($neoCategories as $neo)
-          <li><a href="{{route('games.show', $neo->id)}}">All&nbspGames</a></li>
           @endforeach
         </ul>
       </div>

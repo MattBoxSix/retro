@@ -18,8 +18,10 @@ class thankYouController extends Controller
       $doCategories = Category::where('company', '3DO')->get();
       $cdiCategories = Category::where('company', 'CDi')->get();
       $neoCategories = Category::where('company', 'Neo-Geo')->get();
+      $pcEngineCategories = Category::where('company', 'PCengine')->get();
       $pcCategories = Category::where('company', 'PC')->get();
+      $gawCategories = Category::where('company', 'Game And Watch')->get();
       $importCategories = Category::where('company', 'Imports')->get();
-      return view('thankYou', compact('segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'pcCategories', 'importCategories'));
+      return view('thankYou', compact('segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
     }
 }
