@@ -14,6 +14,8 @@ class Game extends Model
       protected $fillable = [
         'title',
         'image',
+        'score',
+        'description',
         'price',
         'category_id',
         'sold',

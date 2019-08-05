@@ -5,14 +5,16 @@
 <table class="table table-hover table-bordered" id="usersTable">
     <thead>
       <tr>
-        <th>SKU</th>
-        <th>Title</th>
-        <th>Image</th>
-        <th>Price</th>
-        <th>Category</th>
-        <th>Sold?</th>
-        <th>Promote?</th>
-        <th>Action</th>
+        <th width="5%">SKU</th>
+        <th width="5%">Title</th>
+        <th width="5%">Score</th>
+        <th>Description</th>
+        <th width="5%">Image</th>
+        <th width="5%">Price</th>
+        <th width="10%">Category</th>
+        <th width="5%">Sold?</th>
+        <th width="5%">Promote?</th>
+        <th width="5%">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -20,6 +22,8 @@
       <tr>
         <td>{{$game->id}}</td>
         <td>{{$game->title}}</td>
+        <td>{{$game->score}}</td>
+        <td>{{$game->description}}</td>
         <td><img src="{{$game->image}}" alt="" width="50"></td>
         <td>£{{$game->price}}</td>
         <td>{{$game->category->name}}</td>

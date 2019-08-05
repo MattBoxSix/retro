@@ -26,6 +26,20 @@
       {{$errors->first('price')}}
       @endif
     </div>
+    <div class="form-group {{$errors->has('score') ? 'has-error' : ''}}">
+      {!! Form::label('score', 'Score out of 10:') !!}
+      {!! Form::text('score', null, ['class'=>'form-control'])!!}
+      @if($errors->has('score'))
+        {{$errors->first('score')}}
+      @endif
+    </div>
+    <div class="form-group {{$errors->has('description') ? 'has-error' : ''}}">
+      {!! Form::label('description', 'Description:') !!}
+      {!! Form::textarea('description', null, ['class'=>'form-control'])!!}
+      @if($errors->has('description'))
+        {{$errors->first('description')}}
+      @endif
+    </div>
     <div class="form-group {{$errors->has('category_id') ? 'has-error' : ''}}">
       {!! Form::label('category_id', 'Category:') !!}
       {!! Form::select('category_id', [''=>'Choose Category'] + $categories, null, ['class'=>'form-control'])!!}

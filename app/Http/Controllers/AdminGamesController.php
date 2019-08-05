@@ -46,6 +46,8 @@ class AdminGamesController extends Controller
           $games = new Game();
           $games->image = '/images/games/' . $name;
           $games->title = $request->title;
+          $games->score = $request->score;
+          $games->description = $request->description;
           $games->price = $request->price;
           $games->category_id = $request->category_id;
           $games->promote = $request->promote;
@@ -98,6 +100,8 @@ class AdminGamesController extends Controller
           }
             $input['title'] = $request->title;
             $input['price'] = $request->price;
+            $input['score'] = $request->score;
+            $input['description'] = $request->description;
             $input['category_id'] = $request->category_id;
             $input['promote'] = $request->promote;
             $input['sold'] = 0;
