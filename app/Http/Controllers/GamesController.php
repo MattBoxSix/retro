@@ -69,10 +69,6 @@ class GamesController extends Controller
       $cart = Session::has('cart') ? Session::get('cart') : new Cart(null);
       return view('games', compact('allGames','gawCategories', 'pcEngineCategories', 'pcCategories', 'title','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'importCategories','cart'));
     }
-     public function showGames(Request $id){
-       $showGames = Game::find($id);
-       dd($id);
-     }
 
     public function getAddToCart(Request $request, $id){
       $product = Game::find($id);

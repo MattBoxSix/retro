@@ -27,6 +27,10 @@ Route::any('/search/{action}', [
   'as' => 'search.request',
   'action' => '.*'
 ]);
+Route::any('/viewgame/{id}', [
+  'uses' =>'ShowGamesController@show',
+  'as' => 'viewgames.show',
+]);
 
 Route::post('/search', [
   'uses' =>'SearchController@results',

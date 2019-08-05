@@ -2,7 +2,7 @@
 
 @section('content')
   @if(Session::has('cart'))
-      <h1>Shopping Cart</h1>
+      <h1 class="saleGames">Shopping Cart</h1>
       <div class="row">
         <div class="col-3">Item</div>
         <div class="col-2">Image</div>
@@ -40,6 +40,6 @@
         </div>
       </div>
     @else
-          <h1>No items in cart</h1>
+          <h1 class="saleGames">No items in cart</h1>
       @endif
 @endsection

@@ -11241,6 +11241,13 @@ a {
      object-fit: contain;
 }
 
+.hotItemsShow {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .buytItems {
   width: 100px;
   height: 150px;

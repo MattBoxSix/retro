@@ -86,7 +86,7 @@
                 </ul>
               </ul>
             </div>
-            <div class="col-md-8 col-8 saleGames">
+            <div class="col-md-8 col-8">
               @yield('content')
 
             </div>
