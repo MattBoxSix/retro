@@ -49,7 +49,7 @@ class ShowGamesController extends Controller
      */
     public function show($id)
     {
-      $showGames = Game::find($id);    
+      $showGames = Game::find($id);
       $segaCategories = Category::where('company', 'sega')->get();
       $nintCategories = Category::where('company', 'nintendo')->get();
       $psCategories = Category::where('company', 'ps')->get();
@@ -64,8 +64,9 @@ class ShowGamesController extends Controller
       $pcCategories = Category::where('company', 'PC')->get();
       $gawCategories = Category::where('company', 'Game And Watch')->get();
       $importCategories = Category::where('company', 'Imports')->get();
+      $merchCategories = Category::where('company', 'Merchandise')->get();
       $cart = Session::has('cart') ? Session::get('cart') : new Cart(null);
-      return view('viewgame', compact('showGames','gawCategories', 'pcEngineCategories', 'pcCategories', 'title','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'importCategories','cart'));
+      return view('viewgame', compact('merchCategories','showGames','gawCategories', 'pcEngineCategories', 'pcCategories', 'title','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'importCategories','cart'));
     }
 
     /**

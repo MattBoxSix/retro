@@ -125,12 +125,13 @@ class PaymentController extends Controller
         $result = $payment->execute($execution, $this->_api_context);
         if ($result->getState() == 'approved') {
           \Session::put('success', 'Payment success');
-
           $itemName = '';
           foreach($payment->transactions[0]->item_list->items as $item){
-            $gameUpdate = Game::find($item->sku);
-            $gameUpdate->sold = 1;
-            $gameUpdate->save();
+            if(isset($item->sku)){
+              $gameUpdate = Game::findOrFail($item->sku);
+              $gameUpdate->sold = 1;
+              $gameUpdate->save();
+            }
           }
           $order = Order::create ([
                       'total' => $payment->transactions[0]->amount->total,
@@ -145,17 +146,19 @@ class PaymentController extends Controller
                       ]);
 
           foreach($payment->transactions[0]->item_list->items as $item){
-            $itemName = $itemName . $item->sku;
-
-          $cartItem = new CartItem();
-          $cartItem->order_id = $order->id;
-          $cartItem->game_id = $item->sku;
-          $cartItem->price = $item->price;
-          $cartItem->save();
-
+            if(isset($item->sku)){
+              $itemName = $itemName . $item->sku;
+              $cartItem = new CartItem();
+              $cartItem->order_id = $order->id;
+              $cartItem->game_id = $item->sku;
+              $cartItem->price = $item->price;
+              $cartItem->save();
+            }
           }
+
           Session::forget('cart');
-            return redirect()->route('thankyou.index');
+
+          return redirect()->route('thankyou.index');
         }
         \Session::put('error', 'Payment failed');
         return Redirect::route('home.index');

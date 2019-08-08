@@ -118,6 +118,7 @@ class AdminGamesController extends Controller
      */
     public function destroy($id)
     {
-        //
+      Game::findOrFail($id)->delete();
+      return redirect()->back();
     }
 }

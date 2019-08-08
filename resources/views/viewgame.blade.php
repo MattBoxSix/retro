@@ -14,7 +14,7 @@
     @if($cart->contains($showGames['id']))
     <a href="#" class="btn btn-primary" role="button">Added!</a>
     @else
-      <a href="{{ route('games.addToCart', ['id' => $showGames->id]) }}" class="btn btn-success" role="button">Add to Basket</a>
+      <a href="{{ route('games.addToCart', ['id' => $showGames['id']]) }}" class="btn btn-success" role="button">Add to Basket</a>
     @endif
   </div>
 </div>

@@ -30,6 +30,10 @@
       @include('includes/home/recommend')
       <!--end of recommend section-->
 
+      <!--reviews section-->
+      @include('includes/home/reviews')
+      <!--end of reviews section-->
+
       <!--contact and footer section-->
       @include('includes/home/footer')
       <!--end of contact and footer section-->

@@ -22,6 +22,7 @@ class thankYouController extends Controller
       $pcCategories = Category::where('company', 'PC')->get();
       $gawCategories = Category::where('company', 'Game And Watch')->get();
       $importCategories = Category::where('company', 'Imports')->get();
-      return view('thankYou', compact('segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
+      $merchCategories = Category::where('company', 'Merchandise')->get();
+      return view('thankYou', compact('merchCategories','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
     }
 }

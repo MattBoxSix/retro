@@ -66,8 +66,9 @@ class GamesController extends Controller
       $pcCategories = Category::where('company', 'PC')->get();
       $gawCategories = Category::where('company', 'Game And Watch')->get();
       $importCategories = Category::where('company', 'Imports')->get();
+      $merchCategories = Category::where('company', 'Merchandise')->get();
       $cart = Session::has('cart') ? Session::get('cart') : new Cart(null);
-      return view('games', compact('allGames','gawCategories', 'pcEngineCategories', 'pcCategories', 'title','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'importCategories','cart'));
+      return view('games', compact('merchCategories','allGames','gawCategories', 'pcEngineCategories', 'pcCategories', 'title','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'importCategories','cart'));
     }
 
     public function getAddToCart(Request $request, $id){
@@ -104,12 +105,13 @@ class GamesController extends Controller
       $pcCategories = Category::where('company', 'PC')->get();
       $gawCategories = Category::where('company', 'Game And Watch')->get();
       $importCategories = Category::where('company', 'Imports')->get();
+      $merchCategories = Category::where('company', 'Merchandise')->get();
       if (!Session::has('cart')){
-        return view('shoppingCart', ['products' => null], compact('segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
+        return view('shoppingCart', ['products' => null], compact('merchCategories','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
       }
       $oldCart = Session::get('cart');
       $cart = new Cart($oldCart);
-      return view('shoppingCart', ['products' => $cart->items, 'totalPrice' => $cart->totalPrice, 'cartPP' => $cart->pp], compact('segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'pcEngineCategories','gawCategories', 'pcEngineCategories', 'pcCategories','importCategories'));
+      return view('shoppingCart', ['products' => $cart->items, 'totalPrice' => $cart->totalPrice, 'cartPP' => $cart->pp], compact('merchCategories','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'pcEngineCategories','gawCategories', 'pcEngineCategories', 'pcCategories','importCategories'));
     }
 
     public function getCheckout(){
@@ -127,13 +129,14 @@ class GamesController extends Controller
       $pcCategories = Category::where('company', 'PC')->get();
       $gawCategories = Category::where('company', 'Game And Watch')->get();
       $importCategories = Category::where('company', 'Imports')->get();
+      $merchCategories = Category::where('company', 'Merchandise')->get();
       if (!Session::has('cart')){
-        return view('shoppingCart', ['products' => null], compact('segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
+        return view('shoppingCart', ['products' => null], compact('merchCategories','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
       }
       $oldCart = Session::get('cart');
       $cart = new Cart($oldCart);
       $total = $cart->totalPrice;
-      return view('checkout', ['total' => $total], compact('segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
+      return view('checkout', ['total' => $total], compact('merchCategories','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories'));
     }
 
     /**

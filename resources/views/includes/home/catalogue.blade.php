@@ -88,7 +88,7 @@
 <div class="row" id="gamerow">
 <div class="col-4 col-lg-2 gamesCategories">
   <div class="container">
-    <p class="eightBit">8-Bit</p>
+    <p class="eightBit">Merchandise</p>
     <div class="overlay">
       <div class="text">
         <ul class="navbar-nav">

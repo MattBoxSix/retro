@@ -29,7 +29,15 @@
         <td>{{$game->category->name}}</td>
         <td>{{$game->sold == 0 ? 'No' : 'Yes'}}</td>
         <td>{{$game->promote == 1 ? 'Yes' : 'No'}}</td>
-        <td><a href="{{ route('admin.games.edit', $game->id)}}" class="btn btn-success" role="button">Edit</a></td>
+        <td><div class="btn-group-vertical">
+          <a href="{{ route('admin.games.edit', $game->id)}}" class="btn btn-success" role="button">Edit</a><br>
+          {!! Form::open(['method'=>'DELETE', 'action'=> ['AdminGamesController@destroy', $game->id]]) !!}
+          <div class="form-group">
+            {!! Form::submit('Delete', ['class'=>'btn btn-danger']) !!}
+          </div>
+          {!! form::close() !!}
+        </div>
+        </td>
       </tr>
       @endforeach
     </tbody>

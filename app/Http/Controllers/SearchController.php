@@ -27,7 +27,7 @@ class SearchController extends Controller
     $pcCategories = Category::where('company', 'PC')->get();
     $gawCategories = Category::where('company', 'Game And Watch')->get();
     $importCategories = Category::where('company', 'Imports')->get();
-
+    $merchCategories = Category::where('company', 'Merchandise')->get();
     $query = $request->getRequestUri();
     $prefix = '/search/';
 
@@ -36,7 +36,7 @@ class SearchController extends Controller
     }
     $searchResults = Game::where('title', 'LIKE', '%' .$query. '%')->where('sold', 0)->get();
     $cart = Session::has('cart') ? Session::get('cart') : new Cart(null);
-    return view('searchResults', compact('searchResults','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories', 'cart'));
+    return view('searchResults', compact('merchCategories','searchResults','segaCategories', 'nintCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'gawCategories', 'pcEngineCategories', 'pcCategories', 'importCategories', 'cart'));
   }
 
   public function results(request $request){

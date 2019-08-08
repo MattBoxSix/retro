@@ -51,6 +51,9 @@
                 @foreach($importCategories as $import)
                 <li><a href="{{route('games.show', $import->id)}}">{{ucfirst($import->name)}}</a></li>
                 @endforeach
+                @foreach($merchCategories as $merch)
+                <li><a href="{{route('games.show', $merch->id)}}">{{ucfirst($merch->name)}}</a></li>
+                @endforeach
                 @foreach($neoCategories as $neo)
                 <li><a href="{{route('games.show', $neo->id)}}">{{ucfirst($neo->name)}}</a></li>
                 @endforeach
