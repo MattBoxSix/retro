@@ -21,6 +21,9 @@ Route::get('/cookies', 'CookiesController@index')->name('cookies.index');
 Route::get('/terms', 'TermsController@index')->name('terms.index');
 Route::get('/faq', 'FaqController@index')->name('faq.index');
 
+Route::get('contact-us', 'ContactUSController@contactUS');
+Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost']);
+
 
 Route::any('/search/{action}', [
   'uses' =>'SearchController@request',
@@ -112,5 +115,15 @@ Route::resource('/admin/orders', 'OrderController', [
   'edit'=>'admin.orders.edit',
   'show'=>'admin.orders.show',
   'destroy'=>'admin.orders.destroy',
+  ]]);
+
+Route::resource('/admin/holidays', 'HolidayController', [
+  'names'=>[
+  'index'=>'admin.holidays.index',
+  'create'=>'admin.holidays.create',
+  'store'=>'admin.holidays.store',
+  'edit'=>'admin.holidays.edit',
+  'show'=>'admin.holidays.show',
+  'destroy'=>'admin.holidays.destroy',
   ]]);
   });

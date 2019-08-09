@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Game;
 use App\Cart;
 use App\Category;
+use App\Holiday;
 use Illuminate\Http\Request;
 
 use Session;

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Category;
 use App\Game;
 use App\Cart;
+use App\Holiday;
 use Session;
 
 class HomeController extends Controller
@@ -39,7 +40,8 @@ class HomeController extends Controller
         $pcCategories = Category::where('company', 'PC')->get();
         $gawCategories = Category::where('company', 'Game And Watch')->get();
         $importCategories = Category::where('company', 'Imports')->get();
+        $holidayMessage = Holiday::where('set', 1)->get();        
         $cart = Session::has('cart') ? Session::get('cart') : new Cart(null);
-        return view('home', compact('segaCategories', 'nintCategories','gawCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'pcEngineCategories', 'pcCategories', 'importCategories', 'gameRecommends', 'gamesJustIn','cart'));
+        return view('home', compact('holidayMessage','segaCategories', 'nintCategories','gawCategories', 'psCategories', 'xboxCategories', 'amigaCategories', 'atariCategories', 'bitCategories', 'doCategories', 'cdiCategories', 'neoCategories', 'pcEngineCategories', 'pcCategories', 'importCategories', 'gameRecommends', 'gamesJustIn','cart'));
     }
 }

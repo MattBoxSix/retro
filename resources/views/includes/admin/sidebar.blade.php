@@ -4,4 +4,5 @@
   <a href="{{route('home.index')}}" class="list-group-item list-group-item-action"><i class="fas fa-ghost"></i>&nbsp;&nbsp;Main Site</a>
   <a href="{{route('admin.games.index')}}" class="list-group-item list-group-item-action"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;Games</a>
   <a href="{{route('admin.orders.index')}}" class="list-group-item list-group-item-action"><i class="fas fa-book"></i>&nbsp;&nbsp;Orders</a>
+  <a href="{{route('admin.holidays.index')}}" class="list-group-item list-group-item-action"><i class="fas fa-plane"></i>&nbsp;&nbsp;Holidays</a>
 </div>

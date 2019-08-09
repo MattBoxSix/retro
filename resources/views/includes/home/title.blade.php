@@ -18,6 +18,8 @@
     </div>
   </div>
 </div>
+@foreach($holidayMessage as $hMessage)
 <div class="alert alert-danger text-center" role="alert">
-  We are on holiday at the moment until 05/19 and as such we are unable to respond to purchases
+  {{$hMessage->message}}
 </div>
+@endforeach

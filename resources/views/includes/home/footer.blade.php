@@ -4,26 +4,42 @@
       <div class="row">
         <div class="col-sm-5">
           <p>Have a question? We’re here to help. Send us a message and we’ll be in touch. </p>
-            <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=%20DE12AZ&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.maps-erstellen.de"></a></div><style>.mapouter{position:relative;text-align:right;height:250px;width:250px;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:250px;}</style></div> -->
+
         </div>
         <div class="col-sm-7 slideanim">
-          <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="mobile" placeholder="Contact Number" type="text" required>
+          @if(Session::has('success'))
+       <div class="alert alert-success">
+         {{ Session::get('success') }}
+       </div>
+        @endif
+        {!! Form::open(['route'=>'contactus.store']) !!}
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+            {!! Form::text('name', old('name'), ['class'=>'form-control', 'placeholder'=>'Enter Name']) !!}
+          <span class="text-danger">{{ $errors->first('name') }}</span>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
+              {!! Form::text('email', old('email'), ['class'=>'form-control', 'placeholder'=>'Enter Email']) !!}
+            <span class="text-danger">{{ $errors->first('email') }}</span>
             </div>
           </div>
-          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-          <div class="row">
-            <div class="col-sm-12 form-group">
-              <button class="btn btn-primary pull-right" type="submit">Send</button>
-            </div>
-          </div>
+        </div>
+        <div class="form-group {{ $errors->has('number') ? 'has-error' : '' }}">
+          {!! Form::text('number', old('number'), ['class'=>'form-control', 'placeholder'=>'Enter Number']) !!}
+        <span class="text-danger">{{ $errors->first('number') }}</span>
+        </div>
+        <div class="form-group {{ $errors->has('message') ? 'has-error' : '' }}">
+          {!! Form::textarea('message', old('message'), ['class'=>'form-control', 'rows'=>4, 'placeholder'=>'Enter Message']) !!}
+        <span class="text-danger">{{ $errors->first('message') }}</span>
+        </div>
+        <div class="form-group">
+        <button class="btn btn-success">Contact US!</button>
+        </div>
+        {!! Form::close() !!}
+        </div>
         </div>
       </div>
         <footer class="footer" id="contact">
