@@ -45,10 +45,11 @@
         <footer class="footer" id="contact">
           <br>
           <div class="row">
-            <div class="col-2 offset-2"><a href="{{ route('privacy.index')}}">Privacy Policy</a></div>
+            <div class="col-2 offset-1"><a href="{{ route('privacy.index')}}">Privacy Policy</a></div>
             <div class="col-2"><a href="{{ route('cookies.index')}}">Cookie Policy</a></div>
             <div class="col-2"><a href="{{ route('terms.index')}}">Terms & Conditions</a></div>
             <div class="col-2"><a href="{{ route('faq.index')}}">FAQ</a></div>
+            <div class="col-2">Web Design by&nbsp<a href="https://www.boxsix.co.uk" target="_blank">BoxSix</a></div>
           </div>
           <br>
           <div class="row">
@@ -72,7 +73,8 @@
                   </div>
                 </div>
               </div>
-              <img src="/images/paypal.png" alt="" class="img-fluid" style="width: 20%">
+              <img src="/images/paypal.png" alt="" class="img-fluid" style="width: 20%"><br>
+
             </div>
           </div>
 

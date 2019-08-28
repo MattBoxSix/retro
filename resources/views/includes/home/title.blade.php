@@ -18,6 +18,9 @@
     </div>
   </div>
 </div>
+@desktop
+<h1>TEST</h1>
+@enddesktop
 @foreach($holidayMessage as $hMessage)
 <div class="alert alert-danger text-center" role="alert">
   {{$hMessage->message}}

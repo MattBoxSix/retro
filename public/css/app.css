@@ -11383,6 +11383,11 @@ ul {
   .mobile {
     display: block;
   }
+
+  .deltext {
+    font-size: 1rem;
+    line-height: 60px;
+  }
 }
 
 .loginButtons {
